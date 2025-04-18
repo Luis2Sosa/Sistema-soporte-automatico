@@ -26,3 +26,5 @@ while True:
         break
     soporte = soporte_automatico(opcion)
     print(soporte())            
+    
+# Comentario de prueba para comprobar Git y consola
