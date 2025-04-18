@@ -28,3 +28,8 @@ while True:
     print(soporte())            
     
 # Comentario de prueba para comprobar Git y consola
+
+# Función de prueba para Git
+def sumar():
+    resultado = 2 + 2
+    print(f"El resultado es: {resultado}")
