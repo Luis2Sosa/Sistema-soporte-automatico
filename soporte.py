@@ -1,3 +1,5 @@
+# definimos la funcion
+
 def soporte_automatico(opcion):
     if opcion == "problemas de internet": return internet
     elif opcion == "problemas con productos": return productos
@@ -12,6 +14,7 @@ def productos():
 def agente():
     return "El agente del sistema se estara comunicando con usted en un momento."    
 
+# Mostramos el mensaje de bienvenida y el menu 
 print("BIENVENIDO AL SISTEMA DE SOPORTE\n")
 while True:
     print("\nMenu\n")
@@ -19,17 +22,12 @@ while True:
     print("problemas con productos")
     print("hablar con un agente")
     print("salir\n")        
-    
+
     opcion = input("Diganos que desea realizar?\n").lower()
+    
     if opcion == "salir":
         print("Gracias por confiar en nosotros. Un placer asistirle.")
         break
     soporte = soporte_automatico(opcion)
     print(soporte())            
     
-# Comentario de prueba para comprobar Git y consola
-
-# Función de prueba para Git
-def sumar():
-    resultado = 2 + 2
-    print(f"El resultado es: {resultado}")
